@@ -1,12 +1,12 @@
-## MMBL Project
+# MMBL Project
 Download then `npm install`.
 
-# Tools
+## Tools
 
 Project Org Tool : [Trello](https://www.trello.com)  
 Framework : [Angular](https://angular.io/start)
 
-# Tasks
+## Tasks
 
 Barbara - Information Component  
 Markus - Product Component  
@@ -25,14 +25,14 @@ We have the static and dynamic content seperated in two folders
 Static content : `basic/`  
 Dynamic content : `pages/`
 
-# News Component
+## News Component
 Path : `pages/news`  
 Author : [Mattias](https://github.com/mattias-r)
 
-# Products Component
+## Products Component
 Path : `pages/products`  
 Author : [Barbara](https://github.com/barbaraani)
 
-# Information Component
+## Information Component
 Path : `pages/information`  
 Author : [Markus](https://github.com/MarkusGehmayer)
