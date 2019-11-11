@@ -7,7 +7,6 @@ Project Organisation Tool : [Trello](https://www.trello.com)
 Framework : [Angular](https://angular.io/start)  
 Prototype : [Adobe XD](https://www.adobe.com/hu/products/xd.html)  
 Communation : [WhatsApp](https://whatsapp.com)  
-Hotel : Trivago  
 
 ## Tasks
 
