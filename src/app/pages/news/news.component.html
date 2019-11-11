@@ -1,23 +1,24 @@
-<section id="news">
+<section *ngFor="let data of data" id="news">
 
     <!-- Month Name -->
-    <h2 class="news-date">Month</h2>
+    <h2 class="news-date">{{data.date}}</h2>
 
     <!-- Cards for each News -->
-    <div key="news-id" class="news-card">
+    <div  key="news-id" class="news-card">
 
         <!-- CARD MAIN -->
-        <div class="new-card-top">
-            <h3>Title</h3>
-            <small>Author</small>
+        <div  class="new-card-top">
+            <h3>{{data.title}}</h3>
+            <small>{{data.author}}</small>
             <hr>
-            <p>Description</p>
-            <button id="readMoreBtn">Read more...</button>
+            <p>{{data.description}}</p>
+            <button (click) = "change($event)" id="readMoreBtn">Read more...</button>
         </div>
 
         <!-- HIDDEN DEFAULT -->
         <div class="news-card-body" style="display:none">
-            <p>Body</p>
+            <p>{{data.body}}</p>
+            <button (click) = "readLess($event)" id="readMoreBtn">Read less...</button>
         </div>
 
     </div>
