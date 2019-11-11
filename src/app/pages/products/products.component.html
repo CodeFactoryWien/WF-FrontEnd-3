@@ -1,19 +1,34 @@
+
 <section id="products">
-
-    <div class="product-cards">
-
-            <div key="id" class="products-card">
-                
-            </div>
-
-    </div>
-
-    <div class="product-courses">
-
-        <div class="course-cards">
-
+  <div class="product-cards">
+    <div *ngFor="let overview of advantages" key="id" class="products-card">
+      <div class="row">
+        <div class="column">
+          <div key="id" class="products-card">
+            <p>{{overview.fa}}</p>
+            <h3>{{overview.title}}</h3>
+            <p>{{overview.descr}}</p>
+          </div>
         </div>
-        
-    </div>
-
+      </div>
+        </div>
+      </div>
+      <br>
+      <h2>Choose your course!</h2>
+      <br>
+      <div *ngFor="let courses of data"class="product-courses">
+        <div class="row">
+          <div class="column">
+            <div key="id" class="products-card">
+              <h3>{{courses.course}}</h3>
+              <hr>
+              <p>{{courses.price}}</p>
+              <p>{{courses.descr}}</p>
+              <button>register</button>
+            </div>
+          </div>
+         
+          </div>
+    
+     </div>
 </section>
