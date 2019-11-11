@@ -32,17 +32,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Tools
 
-Project Org Tool : [Trello](https://www.trello.com)
+Project Org Tool : [Trello](https://www.trello.com)  
 Framework : [Angular](https://angular.io/start)
 
 # Tasks
 
-Barbara - Information Component
-Markus - Product Component
-Mattias - News Component
-Laszlo - HTML & CSS & Organisation
+Barbara - Information Component/  
+Markus - Product Component  
+Mattias - News Component  
+Laszlo - HTML & CSS & Organisation  
 
-We use Trello as a Project Organisation, and Angular as a Framework for better structure.
+We use Trello as a Project Organisation, and Angular as a Framework for better structure.  
 With Angular we organized the project so, that we have 3 components, so everyone can work on one component, without merging problems.
 
 # Project Structure
