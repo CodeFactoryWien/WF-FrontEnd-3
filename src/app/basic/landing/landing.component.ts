@@ -13,7 +13,7 @@ export class LandingComponent implements OnInit {
   }
 
   scrollDown() {
-    document.querySelector('.container').scrollIntoView({ block: 'start', behavior: 'smooth'})
+    document.querySelector('header').scrollIntoView({ block: 'start', behavior: 'smooth'})
   }
 
 }

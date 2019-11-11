@@ -13,7 +13,7 @@ export class NewsComponent implements OnInit {
       author : "Author",
       date : "September",
       description : "Description",
-      body : "Body"
+      body : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quisquam tempora ipsa eius voluptatibus, ut molestias quaerat modi? Iusto maxime voluptate at ut laborum sunt?"
     },{
       id : 1,
       title : "Katze sitzt auf einem Baum fest",
