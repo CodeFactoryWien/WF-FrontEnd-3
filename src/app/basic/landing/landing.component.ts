@@ -12,4 +12,8 @@ export class LandingComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollDown() {
+    document.querySelector('.container').scrollIntoView({ block: 'start', behavior: 'smooth'})
+  }
+
 }

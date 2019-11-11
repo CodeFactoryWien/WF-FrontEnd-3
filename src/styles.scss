@@ -1,3 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap');
+
+// MIXINS
+
+@mixin box-shadow($left, $top, $radius, $color) {
+	box-shadow: $left $top $radius $color;
+	-webkit-box-shadow: $left $top $radius $color;
+	-moz-box-shadow: $left $top $radius $color;
+}
+
+@mixin transition($property, $duration, $easing: linear) {
+	transition: $property $duration $easing;
+	-webkit-transition: $property $duration $easing;
+	-moz-transition: $property $duration $easing;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
+	border-top-left-radius: $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+	-webkit-border-top-left-radius: $topleft;
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+}
+
+@mixin gradient($color1, $color2) {
+	background-color: $color1;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});
+	background-image: -moz-linear-gradient(center top, $color1, $color2);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
+}
+
+// COLORS
+$color-main : yellow;
+$color-background : rgb(255, 255, 149);
+$color-title : #333;
+$color-accent : #ddd;
+$shadow-sm : 0 2px 6px rgba(0, 0, 0, 0.15);
+$shadow-lg : 0 4px 10px rgba(0, 0, 0, 0.3);
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+// LANDING
+section#landing {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: $color-background;
+    background: linear-gradient(200deg, rgb(255, 255, 149), white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    img {
+        width: 150px;
+        margin: 0 auto;
+        animation: showUp 1.5s;
+    }
+
+    button {
+        width: 70%;
+        margin: 0 auto;
+        font-size: 1.4em;
+        padding: 0.5em 1em;
+        animation: slideIn 1s ease-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: black;
+        color: white;
+        font-weight: 700;
+        box-shadow: $shadow-sm;
+        transition: all 200ms;
+
+        &:hover {
+            color: $color-main;
+            box-shadow: $shadow-lg;
+            outline: none;
+        }
+    }
+
+    small {
+        position: absolute;
+        bottom: 1em;
+        left: 1em;
+        color: #333;
+        font-style: italic;
+    }
+}
+
+header {
+    background-color: black;
+    padding: 1.5em 1em;
+    
+    ul.navbar {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+
+        li.navbar-item {
+
+            a, a:link, a:visited {
+                color: white;
+                text-decoration: none;
+                font-size: 1.4em;
+                transition: all 200ms;
+
+                &:hover {
+                    color: yellow;
+                }
+            }
+        }
+    }
+}
+
+// FOOTER
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+
+    span {
+        color: yellow;
+    }
+
+    a, a:link, a:visited {
+        color: white;
+    }
+}
+
+// CONTAINER
+div.container {
+    padding: 1em;
+}
+
 // NEWS
 section#news {
     
@@ -18,4 +173,29 @@ section#products {
 // INFORMATION
 section#information {
     
+}
+
+// KEYFRAMES
+
+@keyframes shadowIn {
+    0% {
+        box-shadow: none;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    70% {
+        transform: translateX(+5%);
+    }
+}
+
+@keyframes showUp {
+    0% {
+        opacity: 0;
+    }
 }
