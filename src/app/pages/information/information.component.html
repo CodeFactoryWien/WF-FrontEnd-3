@@ -1,15 +1,41 @@
 <section id="information">
-    
-    <div class="information-section">
-        <h3>Heder</h3>
+    <div id="infoNav fixed"><!--position of little nav fixed left or right or top-->
+        <button onclick="teachers.scrollIntoView()">Teachers</button>
+        <button onclick="space.scrollIntoView()">Course Space</button>
+        <button onclick="technologies.scrollIntoView()">Technologies</button>
+    </div>
+    <div class="information-section" id="teachers">
+        <h3>Teachers</h3>
+        <div *ngFor="let element of teachers">
+            <img src="{{element.pics}}" alt="profilepic">
+            <h4>{{element.name}}</h4>
+            <p>{{element.task}}</p>
+            <div class="hidden" style="display:none">
+                <p>{{element.descriptions}}</p>
+                <p>{{element.emails}}</p>
+            </div>
+            <button (click)="show($event)" id="showBtn">Show more...</button>
+        </div>
     </div>
     
-    <div class="information-section">
-        <h3>Heder</h3>
+    <div class="information-section" id="space">
+        <h3>Course Space</h3>
+        <img src="https://pbs.twimg.com/media/EH-LWHcXYAEA8Vv?format=jpg&name=4096x4096" alt="room">
+        <p>23 Kettenbrückengasse</p>
+        <p>1050 Wien</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1573476448965!6m8!1m7!1sAyEDSnRp0ESJcqmHXUDf4w!2m2!1d48.19654209148765!2d16.35953675135932!3f205.50315008104008!4f0.04707540970227342!5f1.8409500903118574" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     </div>
     
-    <div class="information-section">
-        <h3>Heder</h3>
+    <div class="information-section" id="technologies">
+        <h3>Technologies</h3>
+        <div *ngFor="let tech of techs"><!--make them flex-->
+            <h4>{{tech.technologies}}</h4>
+            <img src="{{tech.imgLinks}}" alt="icon">
+            <p style="display:none">{{tech.infos}}</p>
+            <button (click)="show($event)" id="showBtn2">Show more...</button>
+        </div>
     </div>    
     
 </section>
+<!--display none/hidden to display block-->
+<!--bilder design/icon für gs6-->
