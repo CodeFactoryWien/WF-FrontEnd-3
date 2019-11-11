@@ -37,7 +37,7 @@ Framework : [Angular](https://angular.io/start)
 
 # Tasks
 
-Barbara - Information Component/  
+Barbara - Information Component  
 Markus - Product Component  
 Mattias - News Component  
 Laszlo - HTML & CSS & Organisation  
@@ -49,5 +49,15 @@ With Angular we organized the project so, that we have 3 components, so everyone
 
 We have the static and dynamic content seperated in two folders
 
-Static content : `basic/`
+Static content : `basic/`  
 Dynamic content : `pages/`
+
+# News Component
+Path : `pages/news`  
+Author : [Mattias](https://github.com/mattias-r)
+
+# Products Component
+Path : `pages/products`  
+
+# Information Component
+Path : `pages/information`  
