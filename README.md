@@ -1,5 +1,5 @@
 # MMBL Project
-Download then `npm install`.
+Download/clone then `npm install`.
 
 ## Tools
 
