@@ -9,6 +9,8 @@ import { FooterComponent } from './basic/footer/footer.component';
 import { NewsComponent } from './pages/news/news.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { InformationComponent } from './pages/information/information.component';
+import { NewsadminComponent } from './pages/news/newsadmin/newsadmin.component';
+import { ProductsadminComponent } from './pages/products/productsadmin/productsadmin.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { InformationComponent } from './pages/information/information.component'
     FooterComponent,
     NewsComponent,
     ProductsComponent,
-    InformationComponent
+    InformationComponent,
+    NewsadminComponent,
+    ProductsadminComponent
   ],
   imports: [
     BrowserModule,
