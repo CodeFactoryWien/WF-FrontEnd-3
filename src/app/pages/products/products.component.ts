@@ -58,4 +58,8 @@ closeSignUp() {
     let close:any = <any>document.getElementById("signUp");
     close.style.display = "none";
 }
+
+ngOnInit() {
+
+}
 }
