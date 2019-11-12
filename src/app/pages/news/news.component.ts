@@ -107,9 +107,9 @@ export class NewsComponent implements OnInit {
     var nextElem = e.target.parentNode.nextElementSibling;
     e.target.style.display=`none`;
   
-    if (nextElem.style.display==='none') { nextElem.style.display='block'; }
+    if (nextElem.style.display==='none' || !nextElem.style.display) { nextElem.style.display='block'; }
     else { nextElem.style.display='none'; }
-}
+  }
 
 readLess(e){
    var button = e.target.parentNode.previousElementSibling.lastChild;

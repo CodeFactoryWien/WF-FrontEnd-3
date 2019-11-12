@@ -4,7 +4,7 @@
     <div *ngFor="let data of data"  key="news-id" class="news-card">
 
         <!-- CARD MAIN -->
-        <div  class="new-card-top">
+        <div class="new-card-top">
             <h3>{{data.title}}</h3>
             <small><span>&hearts;</span> {{data.author}} | <span>&hearts;</span> {{data.date}}</small>
             <hr>
@@ -13,8 +13,8 @@
         </div>
 
         <!-- HIDDEN DEFAULT -->
-        <div class="news-card-body" style="display:none">
-            <img src="https://picsum.photos/550/250" alt="">
+        <div class="news-card-body">
+            <img src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png" alt="">
             <p>{{data.body}}</p>
             <button (click) = "readLess($event)" id="readMoreBtn"><span>&#8593;</span> Read less...</button>
         </div>
