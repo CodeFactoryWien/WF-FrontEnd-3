@@ -201,6 +201,8 @@ section#news {
     }
 
     div.news-card-body {
+
+        animation: slideDown 1s;
         
         p {
             padding: 0 1em;
@@ -232,10 +234,86 @@ section#products {
 
 // INFORMATION
 section#information {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+
+    img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+        max-width: 400px;
+    }
+
     
+    div#teachers {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        
+        @media screen and (min-width:$breakpoint-tablet) {
+            grid-template-columns: 1fr 1fr;
+            h3 {
+                grid-column: 1/3;
+            }
+        }
+    }
+
+    div#space {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+        
+        img {
+            width: 100%;
+            max-width: none;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: none;
+        }
+    }
+
+    div#technologies {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+        h3 {
+            
+        }
+        img {
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button {
+            border: 1px solid transparent;
+            background-color: white;
+            color: black;
+            padding: 0.25em 1em;
+            box-shadow: $shadow-sm;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-top: 1em;
+        }
+    }
+
 }
 
 // KEYFRAMES
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
 
 @keyframes shadowIn {
     0% {
