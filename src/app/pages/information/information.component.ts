@@ -60,12 +60,12 @@ export class InformationComponent implements OnInit {
     {
       technologies: 'Visual Studio',
       imgLinks: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2000px-Visual_Studio_Code_1.35_icon.svg.png',
-      infos: 'Visual Studio is an Integrated Development Environment(IDE) developed by Microsoft to develop GUI(Graphical User Interface), console, Web applications, web apps, mobile apps, cloud, and web services, etc. With the help of this IDE, you can create managed code as well as native code. It uses the various platforms of Microsoft software development software like Windows store, Microsoft Silverlight, and Windows API, etc. It is not a language-specific IDE as you can use this to write code in C#, C++, VB(Visual Basic), Python, JavaScript, and many more languages. It provides support for 36 different programming languages. It is available for Windows as well as for macOS.',
+      infos: 'Visual Studio is an Integrated Development Environment(IDE) developed by Microsoft to develop GUI(Graphical User Interface), console, Web applications, web apps, mobile apps, cloud, and web services, etc.',
     },
     {
       technologies: 'Git',
       imgLinks: 'https://avatars2.githubusercontent.com/u/4571183?s=400&v=4',
-      infos: 'Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien, die durch Linus Torvalds initiiert wurde.',
+      infos: 'Git is a free Software for sharing Dataversions that were initialized via Linus Torvald.',
     },
     {
       technologies: 'GitHub',
