@@ -236,7 +236,7 @@ section#products {
 section#information {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2em;
+    grid-gap: 4em;
 
     button {
         border: 1px solid transparent;
@@ -266,6 +266,10 @@ section#information {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 1em;
+
+        div {
+            animation: slideDown 1s;
+        }
         
         @media screen and (min-width:$breakpoint-tablet) {
             grid-template-columns: 1fr 1fr;
@@ -306,7 +310,22 @@ section#information {
         padding: 2em;
 
         div {
-            border-top: 1px solid black;
+            
+
+            h4 {
+                background-color: #eee;
+                padding-left: 1em;
+                margin-bottom: 1em;
+                border: 1px solid transparent;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-radius: 5px;
+                border-left: 1px solid black;
+            }
+
+            img {
+                height: 150px;
+            }
 
             p {
                 margin-top: 1em;
@@ -321,11 +340,7 @@ section#information {
             }
 
             img {
-                min-height: 200px;
-            }
-
-            h4 {
-                border-right: 1px solid black;
+                height: 150px;
             }
         }
 
@@ -337,7 +352,7 @@ section#information {
             }
 
             img {
-                min-height: 150px;
+                min-height: 125px;
             }
         }
 
