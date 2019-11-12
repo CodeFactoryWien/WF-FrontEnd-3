@@ -23,7 +23,7 @@
     
     <div class="information-section" id="technologies">
         <h3>Technologies</h3>
-        <div *ngFor="let tech of techs"><!--make them flex-->
+        <div *ngFor="let tech of techs" style="display:flex, flex-direction:column, width:30%">
             <h4>{{tech.technologies}}</h4>
             <img src="{{tech.imgLinks}}" alt="icon">
             <p style="display:none">{{tech.infos}}</p>
