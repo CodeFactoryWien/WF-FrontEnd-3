@@ -10,9 +10,9 @@ export class InformationComponent implements OnInit {
     {
       name: 'Markus Gehmayer',
       task: 'Products-Component',
-      pics: 'https://mymodernmet.com/wp/wp-content/uploads/2019/07/russian-blue-cats-17.jpg',
-      descriptions: '##',
-      emails: '##',
+      pics: 'https://i.ebayimg.com/images/g/SSAAAOSwmrlU1keU/s-l300.jpg',
+      descriptions: 'Gras is for everyone',
+      emails: 'gras_addicted@grasscript.com',
     },
     {
       name: 'Mattias Riedl',
