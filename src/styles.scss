@@ -381,7 +381,7 @@ section#products {
 
         div.products-card {
             border-top: 1px solid grey;
-            box-shadow: $shadow-lg;
+            box-shadow: $shadow-sm;
             padding: 1em;
             margin: 0 auto;
             position: relative;
@@ -391,6 +391,7 @@ section#products {
                 position: absolute;
                 top: -50px;
                 color: yellow;
+                border-color: black;
             }
 
             h3 {
