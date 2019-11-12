@@ -344,7 +344,7 @@ section#products {
             justify-content: space-between;
 
             button {
-                background-color: $color-main;
+                background-color: rgb(217, 255, 218);
                 color: black;
                 box-shadow: $shadow-sm;
 
@@ -418,6 +418,7 @@ section#products {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2em;
+        animation: showUp 2s;
 
         
         @media screen and(min-width:$breakpoint-tablet) {
