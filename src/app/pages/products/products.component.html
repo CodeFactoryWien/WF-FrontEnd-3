@@ -2,55 +2,49 @@
 <section id="products">
   <div class="product-cards">
     <div *ngFor="let overview of advantages" key="id" class="products-card">
-      <div class="row">
-        <div class="column">
-          <div key="id" class="products-card">
-            <p>{{overview.fa}}</p>
+            <i class="{{overview.fa}}"></i>
             <h3>{{overview.title}}</h3>
             <p>{{overview.descr}}</p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <br>
   <h2>Choose your course!</h2>
   <br>
-  <div *ngFor="let courses of data" class="product-courses">
-    <div class="row">
-      <div class="column">
-        <div key="id" class="products-card">
-          <h3>{{courses.course}}</h3>
-          <hr>
-          <p>{{courses.price}}</p>
-          <p>{{courses.descr}}</p>
-          <button (click)="openSignUp()">Sign Up!</button>
-          <dialog id="signUp">
-            <form id="contact" action="" method="post">
-              <h3>Sign up for our courses!<button id="close" (click)="closeSignUp()">x</button></h3>
-              <h4>Contact us today and get ready for the grascicious future ;-)</h4>
-              <fieldset>
-                <input placeholder="which course?" type="text" tabindex="1" required autofocus>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Your name" type="text" tabindex="2" required autofocus>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Your Email Address" type="email" tabindex="3" required>
-              </fieldset>
-              <fieldset>
-                <input placeholder="Your Phone Number" type="tel" tabindex="4">
-              </fieldset>
-              <fieldset>
-                <textarea placeholder="Type your Message Here...." tabindex="5"></textarea>
-              </fieldset>
-              <fieldset>
-                <button name="submit" type="submit" id="contact-submit" data-submit="#">Submit</button>
-              </fieldset>
-            </form>
-          </dialog>
-        </div>
-      </div>
+  <div class="product-courses">
+
+    <div *ngFor="let courses of data" class="course-card">
+            <h3>{{courses.course}}</h3>
+            <div class="course-card-body">
+                <p><span><i class="fas fa-money-bill-wave"></i></span> &euro; {{courses.price}}</p>
+                <p>{{courses.descr}}</p>
+                <button (click)="openSignUp()">Sign Up!</button>
+                <dialog id="signUp">
+                  <div id="form-contact">
+                      <form id="contact" action="" method="post">
+                          <h3>Sign up for our courses!<button id="close" (click)="closeSignUp()">x</button></h3>
+                          <h4>Contact us today and get ready for the grascicious future ;-)</h4>
+                          <fieldset>
+                            <input placeholder="which course?" type="text" tabindex="1" required autofocus>
+                          </fieldset>
+                          <fieldset>
+                            <input placeholder="Your name" type="text" tabindex="2" required autofocus>
+                          </fieldset>
+                          <fieldset>
+                            <input placeholder="Your Email Address" type="email" tabindex="3" required>
+                          </fieldset>
+                          <fieldset>
+                            <input placeholder="Your Phone Number" type="tel" tabindex="4">
+                          </fieldset>
+                          <fieldset>
+                            <textarea placeholder="Type your Message Here...." tabindex="5"></textarea>
+                          </fieldset>
+                          <fieldset>
+                            <button name="submit" type="submit" id="contact-submit" data-submit="#">Submit</button>
+                          </fieldset>
+                        </form>
+                  </div>
+                </dialog>
+            </div>
     </div>
   </div>
 </section>
