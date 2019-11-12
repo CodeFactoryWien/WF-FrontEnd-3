@@ -45,9 +45,19 @@ export class ProductsComponent implements OnInit {
     }
   ];
   
-  constructor() { }
+
+
+  constructor() { 
+
+  }
+
+openSignUp() {
+    let myDialog:any = <any>document.getElementById("signUp");
+    myDialog.showModal();
+}
 
   ngOnInit() {
+
   }
 
 }
