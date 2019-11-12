@@ -51,12 +51,13 @@ export class ProductsComponent implements OnInit {
 
 openSignUp() {
     let open:any = <any>document.getElementById("signUp");
+    console.log(open)
     open.showModal();  
 }
 
 closeSignUp() {
     let close:any = <any>document.getElementById("signUp");
-    close.style.display = "none";
+    close.removeAttribute("open")
 }
 
 ngOnInit() {
