@@ -27,7 +27,7 @@
           <button (click)="openSignUp()">Sign Up!</button>
           <dialog id="signUp">
             <form id="contact" action="" method="post">
-              <h3>Sign up for our courses!</h3>
+              <h3>Sign up for our courses!<button id="close" (click)="closeSignUp()">x</button></h3>
               <h4>Contact us today and get ready for the grascicious future ;-)</h4>
               <fieldset>
                 <input placeholder="which course?" type="text" tabindex="1" required autofocus>
