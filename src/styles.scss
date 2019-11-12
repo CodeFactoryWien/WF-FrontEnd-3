@@ -238,9 +238,19 @@ section#news {
     }
 
     div.new-card-top {
-        
-        small:first-child {
-            margin-right: 1em;
+
+        small {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1em;
+            span {
+                color: #333;
+                margin-right: 1em;
+            }
+
+            i {
+                color: $color-main;
+            }
         }
 
         button {

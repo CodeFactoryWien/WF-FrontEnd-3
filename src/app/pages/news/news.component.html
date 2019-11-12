@@ -6,17 +6,17 @@
         <!-- CARD MAIN -->
         <div class="new-card-top">
             <h3>{{data.title}}</h3>
-            <small><span><i class="fas fa-user"></i></span> {{data.author}} <span><i class="far fa-calendar-alt"></i></span> {{data.date}}</small>
+            <small><span><i class="fas fa-user"></i> {{data.author}}</span>  <span><i class="far fa-calendar-alt"></i> {{data.date}}</span></small>
             <hr>
             <p>{{data.description}}</p>
-            <button (click) = "change($event)" id="readMoreBtn"><span>&#8595;</span> Read more...</button>
+            <button (click) = "change($event)" id="readMoreBtn"><span><i class="fas fa-chevron-circle-down"></i></span> Read more...</button>
         </div>
 
         <!-- HIDDEN DEFAULT -->
         <div class="news-card-body">
-            <img src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png" alt="">
+            <img src="/assets/img/banner.png" alt="banner">
             <p>{{data.body}}</p>
-            <button (click) = "readLess($event)" id="readMoreBtn"><span>&#8593;</span> Read less...</button>
+            <button (click) = "readLess($event)" id="readMoreBtn"><span><i class="fas fa-chevron-circle-up"></i></span> Read less...</button>
         </div>
 
     </div>

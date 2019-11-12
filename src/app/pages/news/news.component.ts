@@ -104,6 +104,9 @@ export class NewsComponent implements OnInit {
   }
 
   change(e) {
+    if(e.target.tagName === "I") {
+      return
+    }
     var nextElem = e.target.parentNode.nextElementSibling;
     e.target.style.display=`none`;
   
