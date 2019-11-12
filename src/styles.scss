@@ -186,6 +186,7 @@ section#news {
                 button {
                     display: none;
                 }
+
             }
 
             div.news-card-body {
@@ -237,6 +238,10 @@ section#news {
     }
 
     div.new-card-top {
+        
+        small:first-child {
+            margin-right: 1em;
+        }
 
         button {
             display: block;

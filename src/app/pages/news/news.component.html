@@ -6,7 +6,7 @@
         <!-- CARD MAIN -->
         <div class="new-card-top">
             <h3>{{data.title}}</h3>
-            <small><span>&hearts;</span> {{data.author}} | <span>&hearts;</span> {{data.date}}</small>
+            <small><span><i class="fas fa-user"></i></span> {{data.author}} <span><i class="far fa-calendar-alt"></i></span> {{data.date}}</small>
             <hr>
             <p>{{data.description}}</p>
             <button (click) = "change($event)" id="readMoreBtn"><span>&#8595;</span> Read more...</button>
