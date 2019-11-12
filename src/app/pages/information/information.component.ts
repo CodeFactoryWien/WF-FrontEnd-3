@@ -13,7 +13,6 @@ export class InformationComponent implements OnInit {
       pics: 'https://mymodernmet.com/wp/wp-content/uploads/2019/07/russian-blue-cats-17.jpg',
       descriptions: '##',
       emails: '##',
-
     },
     {
       name: 'Mattias Riedl',
@@ -25,9 +24,9 @@ export class InformationComponent implements OnInit {
     {
       name: 'Barbara Anissin',
       task: 'Information-Component',
-      pics: 'https://mymodernmet.com/wp/wp-content/uploads/2019/07/russian-blue-cats-17.jpg',
-      descriptions: '##',
-      emails: '##',
+      pics: 'https://scontent-vie1-1.cdninstagram.com/vp/3edd36626537e66dc62ef6dfef3c18a5/5E466223/t51.2885-15/sh0.08/e35/s750x750/64958718_632700010539694_3589811227766202819_n.jpg?_nc_ht=scontent-vie1-1.cdninstagram.com&_nc_cat=110',
+      descriptions: 'I like cats',
+      emails: 'anissinb@gmail.com',
     },
     {
       name: 'Laszlo Sandor',
@@ -35,14 +34,13 @@ export class InformationComponent implements OnInit {
       pics: 'https://mymodernmet.com/wp/wp-content/uploads/2019/07/russian-blue-cats-17.jpg',
       descriptions: '##',
       emails: '##',
-
     }
   ]
   techs = [
     {
       technologies: 'GS6',
       imgLinks: '',
-      infos: '##',
+      infos: "GrasScript 6 is our self-developed programming language. It can be used front-end and back-end. It is everyone's dream come true!",
     },
     {
       technologies: 'Angular',
@@ -97,10 +95,8 @@ export class InformationComponent implements OnInit {
   ngOnInit() {
   }
 
-  
   show(e){
     var changeText = e.currentTarget
-    console.log(changeText);
     var nextElem = e.target.previousElementSibling;
     if (nextElem.style.display==='none') { 
       nextElem.style.display='block'; 
@@ -112,6 +108,3 @@ export class InformationComponent implements OnInit {
     }
   }
 }
-
-
-
