@@ -97,7 +97,7 @@ export class NewsComponent implements OnInit {
     })
   }
 
-  genIndex(data:Object[]) {
+  genIndex(data:any) {
     data.forEach(x => {
       x.id = data.indexOf(x)
     })
