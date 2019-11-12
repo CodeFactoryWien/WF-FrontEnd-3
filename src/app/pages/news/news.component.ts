@@ -82,19 +82,25 @@ export class NewsComponent implements OnInit {
         description: "According to federal statistics, there was an estimated one script.",
         body: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quisquam tempora ipsa eius voluptatibus, ut molestias quaerat modi? Iusto maxime voluptate at ut laborum sunt?",
       }
-    ] 
+    ]
     void this.dataSort(this.data)
     void this.genIndex(this.data)
   }
 
   dataSort(data:any) {
     data.sort((a, b) => {
-      if(a.author > b.author) {
+      if(a.id > b.id) {
         return 1
       } else {
         return -1
       }
     })
+  }
+
+  addToArray(obj:any) {
+    this.data.unshift(obj)
+    this.genIndex(this.data)
+    this.dataSort(this.data)
   }
 
   genIndex(data:any) {
