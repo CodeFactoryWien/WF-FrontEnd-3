@@ -194,6 +194,13 @@ section#news {
     }
 
     div.new-card-top {
+
+        @media screen and(min-width:$breakpoint-tablet) {
+            h3 {
+                height: 50px;
+            }
+        }
+
         p {
             min-height: 60px;
             margin-top: 0;
