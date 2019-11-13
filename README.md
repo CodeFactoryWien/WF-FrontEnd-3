@@ -30,6 +30,8 @@ Dynamic content : `pages/`
 ## News Component
 Path : `pages/news`  
 Author : [Mattias](https://github.com/mattias-r)
+What i did: News page with content.
+How i did it: The whole content of the page will be created with ngFor*. A button let you show more information.
 
 ## Products Component
 Path : `pages/products`  
