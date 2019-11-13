@@ -10,28 +10,28 @@ export class InformationComponent implements OnInit {
     {
       name: 'Markus Gehmayer',
       task: 'Products-Component',
-      pics: 'https://www.bridalasia.com/wp-content/uploads/2017/12/default-user-img.jpg',
+      pics: 'assets/img/user.png',
       descriptions: 'Gras is for everyone',
       emails: 'gras_addicted@grasscript.com',
     },
     {
       name: 'Mattias Riedl',
       task: 'News-Component',
-      pics: 'https://www.bridalasia.com/wp-content/uploads/2017/12/default-user-img.jpg',
+      pics: 'assets/img/user.png',
       descriptions: '##',
       emails: '##',
     },
     {
       name: 'Barbara Anissin',
       task: 'Information-Component',
-      pics: 'https://www.bridalasia.com/wp-content/uploads/2017/12/default-user-img.jpg',
+      pics: 'assets/img/user.png',
       descriptions: 'I like cats',
       emails: 'anissinb@gmail.com',
     },
     {
       name: 'Laszlo Sandor',
       task: 'Allrounder+Organisation',
-      pics: 'https://www.bridalasia.com/wp-content/uploads/2017/12/default-user-img.jpg',
+      pics: 'assets/img/user.png',
       descriptions: 'My favorite color is Vinzenz',
       emails: 'voidlaszlo@gmail.com',
     }
