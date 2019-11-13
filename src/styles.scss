@@ -59,6 +59,7 @@ $breakpoint-desktop : 1280px;
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
@@ -89,6 +90,11 @@ section#landing {
         width: 150px;
         margin: 0 auto;
         animation: showUp 1.5s;
+
+        &:hover {
+            transition: all 200ms;
+            box-shadow: $shadow-lg;
+        }
     }
 
     button {

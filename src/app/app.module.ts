@@ -11,6 +11,7 @@ import { ProductsComponent } from './pages/products/products.component';
 import { InformationComponent } from './pages/information/information.component';
 import { NewsadminComponent } from './pages/news/newsadmin/newsadmin.component';
 import { ProductsadminComponent } from './pages/products/productsadmin/productsadmin.component';
+import { TestimonialsComponent } from './basic/testimonials/testimonials.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductsadminComponent } from './pages/products/productsadmin/productsa
     ProductsComponent,
     InformationComponent,
     NewsadminComponent,
-    ProductsadminComponent
+    ProductsadminComponent,
+    TestimonialsComponent
   ],
   imports: [
     BrowserModule,
