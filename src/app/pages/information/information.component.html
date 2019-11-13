@@ -1,15 +1,18 @@
 <section id="information">
     <div class="information-section" id="teachers">
-        <h3>Teachers</h3>
-        <div id="teachers-div" *ngFor="let element of teachers">
-            <img src="{{element.pics}}" alt="profilepic">
-            <h4>{{element.name}}</h4>
-            <p>{{element.task}}</p>
-            <div class="hidden" style="display:none">
-                <p>{{element.descriptions}}</p>
-                <p>{{element.emails}}</p>
+        <h3>Our Teachers</h3>
+        <div id="teachers-div" class="card" *ngFor="let element of teachers">
+            <div class="front"><img src="{{element.pics}}" alt="profilepic"></div>
+            <div class="back">
+                <div class="details"><h4>{{element.name}}</h4>
+                    <p>{{element.task}}</p>
+                    <div class="hidden" style="display:none">
+                        <p>{{element.descriptions}}</p>
+                        <p>{{element.emails}}</p>
+                    </div>
+                    <button (click)="show($event)">Show more...</button>
+                </div>
             </div>
-            <button (click)="show($event)">Show more...</button>
         </div>
     </div>
     
@@ -25,7 +28,7 @@
         </div>        
     </div>
     <div class="information-section" id="technologies">
-        <h3>Technologies</h3>
+        <h3>Our Technologies</h3>
         <div *ngFor="let tech of techs" style="display:flex, flex-direction:column, width:30%">
             <h4>{{tech.technologies}}</h4>
             <img src="{{tech.imgLinks}}" alt="icon">

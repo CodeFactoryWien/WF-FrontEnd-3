@@ -10,28 +10,28 @@ export class InformationComponent implements OnInit {
     {
       name: 'Markus Gehmayer',
       task: 'Products-Component',
-      pics: 'https://image.pushauction.com/0/0/0695585d-5c39-4661-9ef6-373cf7b2f46a/71ee8e61-9b17-4296-898d-01faca7c7d25.jpg',
+      pics: 'https://www.bridalasia.com/wp-content/uploads/2017/12/default-user-img.jpg',
       descriptions: 'Gras is for everyone',
       emails: 'gras_addicted@grasscript.com',
     },
     {
       name: 'Mattias Riedl',
       task: 'News-Component',
-      pics: 'https://mymodernmet.com/wp/wp-content/uploads/2019/07/russian-blue-cats-17.jpg',
+      pics: 'https://www.bridalasia.com/wp-content/uploads/2017/12/default-user-img.jpg',
       descriptions: '##',
       emails: '##',
     },
     {
       name: 'Barbara Anissin',
       task: 'Information-Component',
-      pics: 'https://scontent-vie1-1.cdninstagram.com/vp/3edd36626537e66dc62ef6dfef3c18a5/5E466223/t51.2885-15/sh0.08/e35/s750x750/64958718_632700010539694_3589811227766202819_n.jpg?_nc_ht=scontent-vie1-1.cdninstagram.com&_nc_cat=110',
+      pics: 'https://www.bridalasia.com/wp-content/uploads/2017/12/default-user-img.jpg',
       descriptions: 'I like cats',
       emails: 'anissinb@gmail.com',
     },
     {
       name: 'Laszlo Sandor',
       task: 'Allrounder+Organisation',
-      pics: 'assets/img/laszlo.png',
+      pics: 'https://www.bridalasia.com/wp-content/uploads/2017/12/default-user-img.jpg',
       descriptions: 'My favorite color is Vinzenz',
       emails: 'voidlaszlo@gmail.com',
     }
