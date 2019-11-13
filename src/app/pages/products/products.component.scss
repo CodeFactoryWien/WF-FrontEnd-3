@@ -1,0 +1,22 @@
+input {
+  transition: 0.5s;
+}
+
+input:hover {
+  background: rgb(217, 255, 218);
+  transition: all 0.8s ease 0s;
+  text-transform: uppercase;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+textarea {
+  transition: 0.5s;
+}
+
+textarea:hover {
+  background: rgb(217, 255, 218);
+  transition: all 0.8s ease 0s;
+  text-transform: uppercase;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
