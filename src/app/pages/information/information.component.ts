@@ -18,8 +18,8 @@ export class InformationComponent implements OnInit {
       name: 'Mattias Riedl',
       task: 'News-Component',
       pics: 'assets/img/user.png',
-      descriptions: '##',
-      emails: '##',
+      descriptions: 'do not call me!',
+      emails: 'mattias.r@gmx.at',
     },
     {
       name: 'Barbara Anissin',
