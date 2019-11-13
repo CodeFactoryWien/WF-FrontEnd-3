@@ -157,6 +157,11 @@ header {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         text-align: center;
+        margin: 0 auto;
+
+        @media screen and(min-width:$breakpoint-tablet) {
+            grid-template-columns: repeat(4, 1fr);
+        }
 
         li.navbar-item {
 
@@ -171,12 +176,20 @@ header {
                 }
 
                 @media screen and(min-width:$breakpoint-desktop) {
-                    font-size: 2.5em;
+                    font-size: 2em;
                 }
 
                 &:hover {
                     color: $color-main;
                 }
+            }
+        }
+
+        li:nth-child(4) {
+            display: none;
+
+            @media screen and(min-width:$breakpoint-tablet) {
+                display: block;
             }
         }
     }
