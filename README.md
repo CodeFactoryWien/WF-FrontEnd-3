@@ -1,4 +1,4 @@
-# MMBL Project
+# GS6 Project
 Download/clone then `npm install`.
 
 ## Tools
@@ -15,7 +15,7 @@ Markus - Product Component
 Mattias - News Component  
 Laszlo - HTML & CSS & Organisation  
 
-We use Trello as a Project Organisation, and Angular as a Framework for better structure.  
+We use Trello for Project Organisation, and Angular as a Framework for better structure.  
 With Angular we organized the project so, that we have 3 components, so everyone can work on one component, without merging problems.
 
 ---
@@ -33,8 +33,12 @@ Author : [Mattias](https://github.com/mattias-r)
 
 ## Products Component
 Path : `pages/products`  
-Author : [Barbara](https://github.com/barbaraani)
+Author : [Markus](https://github.com/MarkusGehmayer)  
+What I did: products site, sign up form incl. some css effects. At the landing page the gs6 text animation. 
+How I did it: take the data from a json object and insert it with angular via *ngFor. Write a little function for the modal box (sign up form). 
 
 ## Information Component
 Path : `pages/information`  
-Author : [Markus](https://github.com/MarkusGehmayer)
+Author : [Barbara](https://github.com/barbaraani)  
+What I did: Teachers (plus CSS with effect), Course Room image + ifram google maps, technologies (list of techs with additional info on button click)  
+How I did it: saved data in the TS and applied it in the HTML via {{}} with *ngFor
