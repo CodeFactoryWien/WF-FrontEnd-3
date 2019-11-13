@@ -59,6 +59,7 @@ $breakpoint-desktop : 1280px;
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 body {
@@ -89,6 +90,11 @@ section#landing {
         width: 150px;
         margin: 0 auto;
         animation: showUp 1.5s;
+
+        &:hover {
+            transition: all 200ms;
+            box-shadow: $shadow-lg;
+        }
     }
 
     button {
@@ -151,6 +157,11 @@ header {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         text-align: center;
+        margin: 0 auto;
+
+        @media screen and(min-width:$breakpoint-tablet) {
+            grid-template-columns: repeat(4, 1fr);
+        }
 
         li.navbar-item {
 
@@ -165,12 +176,20 @@ header {
                 }
 
                 @media screen and(min-width:$breakpoint-desktop) {
-                    font-size: 2.5em;
+                    font-size: 2em;
                 }
 
                 &:hover {
                     color: $color-main;
                 }
+            }
+        }
+
+        li:nth-child(4) {
+            display: none;
+
+            @media screen and(min-width:$breakpoint-tablet) {
+                display: block;
             }
         }
     }

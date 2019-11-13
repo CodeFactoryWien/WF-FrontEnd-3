@@ -5,10 +5,12 @@ import { NewsComponent } from './pages/news/news.component';
 import { InformationComponent } from './pages/information/information.component';
 import { NewsadminComponent } from './pages/news/newsadmin/newsadmin.component';
 import { ProductsadminComponent } from './pages/products/productsadmin/productsadmin.component';
+import { TestimonialsComponent } from './basic/testimonials/testimonials.component';
 
 
 const routes: Routes = [
-  {path:'', component: ProductsComponent},
+  {path:'', component: TestimonialsComponent},
+  {path:'products', component: ProductsComponent},
   {path:'news', component: NewsComponent},
   {path:'information', component: InformationComponent},
   {path:'news/admin', component: NewsadminComponent},
