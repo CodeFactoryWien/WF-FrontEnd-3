@@ -76,6 +76,42 @@ section#landing {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    animation: showUp 1s;
+    text-align: center;
+
+    div.text-container {
+        position: relative;
+
+        small#code-desc {
+            position: absolute;
+            top: 5px;
+            left: 5%;
+            font-weight: 700;
+            font-size: 0.8em;
+            color: grey;
+
+            @media screen and (min-width:$breakpoint-desktop) {
+                left: 10px
+            }
+        }
+
+        div.text {
+            width: 95%;
+            margin: 0 auto;
+            background-color: $color-secondary;
+            box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            padding: 2em;
+            color: $color-title;
+            font-weight: 700;
+
+            @media screen and (min-width:$breakpoint-desktop) {
+                width: 100%;
+                min-width: 500px;
+                padding: 1em;
+            }
+        }
+    }
 
     img {
         width: 150px;
@@ -122,11 +158,12 @@ section#landing {
             width: 300px;
         }
 
-        p {
+        div.text-container {
             grid-column: 1;
             align-self: flex-end;
             margin-bottom: 2em;
             font-size: 1.4em;
+            justify-self: center;
         }
         
         button {
