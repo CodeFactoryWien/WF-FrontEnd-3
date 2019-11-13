@@ -29,18 +29,18 @@ Dynamic content : `pages/`
 
 ## News Component
 Path : `pages/news`  
-Author : [Mattias](https://github.com/mattias-r)
-What i did: News page with content.
-How i did it: The whole content of the page will be created with ngFor*. A button let you show more information.
+Author : [Mattias](https://github.com/mattias-r)  
+`What?` : News page with content.  
+`How?` : The whole content of the page will be created with ngFor*. A button let you show more information.
 
 ## Products Component
 Path : `pages/products`  
 Author : [Markus](https://github.com/MarkusGehmayer)  
-What I did: products site, sign up form incl. some css effects. At the landing page the gs6 text animation.  
-How I did it: take the data from a json object and insert it with angular via *ngFor. Write a little function for the modal box (sign up form). 
+`What?` : products site, sign up form incl. some css effects. At the landing page the gs6 text animation.  
+`How?` : take the data from a json object and insert it with angular via *ngFor. Write a little function for the modal box (sign up form). 
 
 ## Information Component
 Path : `pages/information`  
 Author : [Barbara](https://github.com/barbaraani)  
-What I did: Teachers (plus CSS with effect), Course Room image + ifram google maps, technologies (list of techs with additional info on button click)  
-How I did it: saved data in the TS and applied it in the HTML via {{}} with *ngFor
+`What?` : Teachers (plus CSS with effect), Course Room image + ifram google maps, technologies (list of techs with additional info on button click)  
+`How?` :saved data in the TS and applied it in the HTML via {{}} with *ngFor
