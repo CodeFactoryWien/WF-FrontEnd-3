@@ -10,7 +10,7 @@ export class InformationComponent implements OnInit {
     {
       name: 'Markus Gehmayer',
       task: 'Products-Component',
-      pics: 'https://i.ebayimg.com/images/g/SSAAAOSwmrlU1keU/s-l300.jpg',
+      pics: 'https://ksassets.timeincuk.net/wp/uploads/sites/55/2019/07/Webp.net-resizeimage-2-2-920x585.jpg',
       descriptions: 'Gras is for everyone',
       emails: 'gras_addicted@grasscript.com',
     },
