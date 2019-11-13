@@ -586,9 +586,9 @@ section#information {
 
     button {
         border: 1px solid transparent;
-        background-color: white;
-        color: black;
-        padding: 0.25em 1em;
+        background-color: black;
+        color: white;
+        padding: 0.5em 1em;
         box-shadow: $shadow-sm;
         border-radius: 5px;
         display: block;
@@ -599,6 +599,7 @@ section#information {
     img {
         width: 100%;
         max-width: 400px;
+        max-height: 250px;
     }
 
     iframe {

@@ -31,7 +31,7 @@ export class InformationComponent implements OnInit {
     {
       name: 'Laszlo Sandor',
       task: 'Allrounder+Organisation',
-      pics: 'https://mymodernmet.com/wp/wp-content/uploads/2019/07/russian-blue-cats-17.jpg',
+      pics: 'assets/img/laszlo.png',
       descriptions: 'My favorite color is Vinzenz',
       emails: 'voidlaszlo@gmail.com',
     }
