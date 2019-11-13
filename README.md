@@ -34,8 +34,8 @@ Author : [Mattias](https://github.com/mattias-r)
 ## Products Component
 Path : `pages/products`  
 Author : [Markus](https://github.com/MarkusGehmayer)  
-What I did: products site, sign up form incl. some css effects. At the landing page the gs6 text animation.
-How I did: take the data from a json object and insert it with angular via *ngFor. Write a little function for the modal box (sign up form). 
+What I did: products site, sign up form incl. some css effects. At the landing page the gs6 text animation. 
+How I did it: take the data from a json object and insert it with angular via *ngFor. Write a little function for the modal box (sign up form). 
 
 ## Information Component
 Path : `pages/information`  
