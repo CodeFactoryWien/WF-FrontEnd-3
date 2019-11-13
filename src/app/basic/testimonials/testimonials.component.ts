@@ -9,6 +9,6 @@ export class TestimonialsComponent implements OnInit {
 
   constructor() { }
 
-
+  ngOnInit(){}
 
 }
