@@ -29,7 +29,7 @@ Dynamic content : `pages/`
 
 ## News Component
 Path : `pages/news`  
-Author : [Mattias](https://github.com/mattias-r)
+Author : [Mattias](https://github.com/mattias-r)  
 `What?` : News page with content.  
 `How?` : The whole content of the page will be created with ngFor*. A button let you show more information.
 
