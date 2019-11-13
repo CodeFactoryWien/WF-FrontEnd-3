@@ -1,4 +1,4 @@
-# MMBL Project
+# GS6 Project
 Download/clone then `npm install`.
 
 ## Tools
