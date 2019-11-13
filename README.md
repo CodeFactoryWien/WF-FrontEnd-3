@@ -15,7 +15,7 @@ Markus - Product Component
 Mattias - News Component  
 Laszlo - HTML & CSS & Organisation  
 
-We use Trello as a Project Organisation, and Angular as a Framework for better structure.  
+We use Trello for Project Organisation, and Angular as a Framework for better structure.  
 With Angular we organized the project so, that we have 3 components, so everyone can work on one component, without merging problems.
 
 ---
