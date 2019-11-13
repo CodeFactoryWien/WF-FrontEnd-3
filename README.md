@@ -45,5 +45,5 @@ Author : [Markus](https://github.com/MarkusGehmayer)
 Path : `pages/information`  
 Author : [Barbara](https://github.com/barbaraani)  
 
-`What?` : Teachers (plus CSS with effect), Course Room image + ifram google maps, technologies (list of techs with additional info on button click)  
+`What?` : Teachers (plus CSS with effect), Course Room image + iframe google maps, technologies (list of techs with additional info on button click)  
 `How?` :saved data in the TS and applied it in the HTML via {{}} with *ngFor
