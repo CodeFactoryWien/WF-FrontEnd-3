@@ -13,7 +13,7 @@ export class TestimonialsComponent implements OnInit {
   	  class TextScramble {
   constructor(el) {
     this.el = el
-    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+    this.chars = '&#x2141;!<>-_\\/[]&#x2141;{}—=+*^?&#x2141;#________'
     this.update = this.update.bind(this)
   }
   setText(newText) {
@@ -82,7 +82,7 @@ const fx = new TextScramble(el)
 let counter = 0
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 800)
+    setTimeout(next, 1300)
   })
   counter = (counter + 1) % phrases.length
 }

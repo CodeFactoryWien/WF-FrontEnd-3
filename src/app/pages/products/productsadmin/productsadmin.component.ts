@@ -10,7 +10,9 @@ export class ProductsadminComponent implements OnInit {
   constructor() {
    }
 
-
+ngOnInit() {
+	
+}
 
 
 
