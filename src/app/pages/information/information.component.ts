@@ -32,14 +32,14 @@ export class InformationComponent implements OnInit {
       name: 'Laszlo Sandor',
       task: 'Allrounder+Organisation',
       pics: 'https://mymodernmet.com/wp/wp-content/uploads/2019/07/russian-blue-cats-17.jpg',
-      descriptions: '##',
-      emails: '##',
+      descriptions: 'My favorite color is Vinzenz',
+      emails: 'voidlaszlo@gmail.com',
     }
   ]
   techs = [
     {
       technologies: 'GS6',
-      imgLinks: '',
+      imgLinks: 'assets/img/logo.png',
       infos: "GrasScript 6 is our self-developed programming language. It can be used front-end and back-end. It is everyone's dream come true!",
     },
     {
