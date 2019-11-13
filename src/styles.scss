@@ -711,6 +711,23 @@ section#information {
         font-size: 16px;
     }
 
+    .card {
+
+        .back {
+
+            .details {
+
+                div {
+                    background-color: rgb(250, 250, 250);
+                    width: 95%;
+                    border-radius: 5px;
+                    padding: 0.5em 1em;
+                    margin: 0.5em auto;
+                }
+            }
+        }
+    }
+
     span {
         color: $color-main;
     }
