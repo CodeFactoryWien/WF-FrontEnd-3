@@ -37,6 +37,6 @@ Author : [Markus](https://github.com/MarkusGehmayer)
 
 ## Information Component
 Path : `pages/information`  
-Author : [Barbara](https://github.com/barbaraani)
-What I did: Teachers (plus CSS with effect), Course Room image + ifram google maps, technologies (list of techs with additional info on button click)
+Author : [Barbara](https://github.com/barbaraani)  
+What I did: Teachers (plus CSS with effect), Course Room image + ifram google maps, technologies (list of techs with additional info on button click)  
 How I did it: saved data in the TS and applied it in the HTML via {{}} with *ngFor
