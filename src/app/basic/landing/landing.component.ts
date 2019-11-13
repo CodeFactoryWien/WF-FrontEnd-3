@@ -11,7 +11,13 @@ export class LandingComponent implements OnInit {
 
     ngOnInit() {
   	  class TextScramble {
-  constructor(el) {
+        el:any
+        chars:any
+        queue:any
+        resolve:any
+        frameRequest:any
+        frame:any
+  constructor(el:any) {
     this.el = el
     this.chars = '&#x2141;!<>-_\\/[]&#x2141;{}—=+*^?&#x2141;#________'
     this.update = this.update.bind(this)
