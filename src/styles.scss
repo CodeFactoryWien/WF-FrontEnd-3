@@ -807,10 +807,9 @@ section#information {
         grid-template-columns: 1fr;
         grid-gap: 2em;
         h3 {
-            background-color: #333;
-            padding: 1em;
-            color: white;
-            font-size: 2em;
+            background-color: $color-secondary;
+            padding: 2em;
+            color: black;
         }
 
         div {
