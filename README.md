@@ -33,8 +33,9 @@ Author : [Mattias](https://github.com/mattias-r)
 
 ## Products Component
 Path : `pages/products`  
-Author : [Barbara](https://github.com/barbaraani)
+Author : [Markus](https://github.com/MarkusGehmayer)  
 
 ## Information Component
 Path : `pages/information`  
-Author : [Markus](https://github.com/MarkusGehmayer)
+Author : [Barbara](https://github.com/barbaraani)
+
