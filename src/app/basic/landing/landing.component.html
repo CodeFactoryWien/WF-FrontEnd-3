@@ -4,5 +4,14 @@
       <small id="code-desc">GS6</small>
       <div class="text"></div>
     </div>
+    <div id="popUpWindow" style="display:none">
+        <img src="assets/img/banner.png" alt="banner">
+        <button (click)="closePopUp()">x</button>
+        <div class="popUp-body">
+          <h2>Congratulations!</h2>
+          <p>You just won a <span>{{ actionProcent }}%</span> off coupon for your next purchase!</p>
+          <h3>Your code : {{ actionCode }}</h3>
+        </div>
+    </div>
     <button (click)="scrollDown()">Learn more</button>
 </section>
