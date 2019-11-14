@@ -13,7 +13,7 @@ Communication : [WhatsApp](https://whatsapp.com)
 Barbara - Information Component  
 Markus - Product Component  
 Mattias - News Component  
-Laszlo - HTML & CSS & Organisation  
+Laszlo - HTML & CSS & Testimonials Component & Organisation
 
 We use Trello for Project Organisation, and Angular as a Framework for better structure.  
 With Angular we organized the project so, that we have 3 components, so everyone can work on one component, without merging problems.
@@ -46,4 +46,12 @@ Path : `pages/information`
 Author : [Barbara](https://github.com/barbaraani)  
 
 `What?` : Teachers (plus CSS with effect), Course Room image + iframe google maps, technologies (list of techs with additional info on button click)  
-`How?` :saved data in the TS and applied it in the HTML via {{}} with *ngFor
+`How?` :saved data in the TS and applied it in the HTML via {{}} with *ngFor  
+
+## Testimonials Component
+Path : `pages/testimonials`  
+Author : [Laszlo](https://github.com/voidlaszlo)  
+
+`What?` : Comments
+`How?` : There is an isLoggedIn boolean in the component.ts file, and when it's true, you can leave a comment there.  
+To set this true, you have to log in.
