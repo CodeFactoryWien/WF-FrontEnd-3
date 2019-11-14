@@ -16,7 +16,7 @@ export class TestimonialsComponent implements OnInit {
 
   addComment() {
     if(!this.isLoggedIn) {
-      this.loginNow()
+      this.showLogin()
     } else {
       let text:any = document.getElementById('commentText').value
       let rating:any = document.getElementById('commentRating').value
@@ -50,9 +50,15 @@ export class TestimonialsComponent implements OnInit {
 
   }
 
+  showLogin() {
+    document.getElementById('comment-login').style.display = "block"
+    document.getElementById('comment-login').scrollIntoView({behavior: "smooth"})
+  }
+
   loginNow() {
-    this.userName = prompt("Whats your name?")
+    this.userName = document.getElementById('userName').value
     this.isLoggedIn = true
+    document.getElementById('testimonial-comment').scrollIntoView({behavior:"smooth", block:"center"})
   }
 
 

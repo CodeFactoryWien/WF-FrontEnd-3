@@ -1064,6 +1064,7 @@ section#testimonials {
         grid-template-columns: 1fr;
         padding: 1em;
         border: 1px solid #eee;
+        max-width: 400px;
 
         input {
             padding: 0.25em 0.5em;
@@ -1078,6 +1079,19 @@ section#testimonials {
             background-color: $color-title;
             color: white;
         }
+    }
+
+    div#comment-login {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        padding: 1em;
+        background-color: white;
     }
 
     h3 {

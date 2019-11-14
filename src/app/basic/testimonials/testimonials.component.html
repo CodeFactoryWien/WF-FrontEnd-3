@@ -43,10 +43,18 @@
 
       </div>
 
+      <h3>Leave a comment</h3>
+
     <div id="testimonial-comment">
         <input id="commentText" type="text" placeholder="Your comment">
         <input id="commentRating" type="number" min="1" max="5" maxlength="1" placeholder="Rating">
         <button (click)="addComment()" id="addComment">Comment</button>
+    </div>
+
+    <div id="comment-login" stlye="display:none">
+        <h2>Please login to continue!</h2>
+        <input type="text" placeholder="Your name" id="userName">
+        <button id="loginBtn" (click)="loginNow()">Login</button>
     </div>
 
       <h3>Get Started</h3>
