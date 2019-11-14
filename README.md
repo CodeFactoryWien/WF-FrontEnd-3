@@ -16,7 +16,7 @@ Mattias - News Component
 Laszlo - HTML & CSS & Testimonials Component & Organisation
 
 We use Trello for Project Organisation, and Angular as a Framework for better structure.  
-With Angular we organized the project so, that we have 3 components, so everyone can work on one component, without merging problems.
+With Angular we organized the project so, that we have 4 components, so everyone can work on one component, without merging problems.
 
 ---
 
