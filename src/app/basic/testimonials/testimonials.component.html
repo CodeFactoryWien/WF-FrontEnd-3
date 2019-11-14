@@ -1,67 +1,82 @@
 <section id="testimonials">
 
-    <div id="testimonial-container">
-        <div class="testimonial-lg">
-            <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="testavatar">
-            <p><span>"</span>It was really nice to work with the GS Team, I've learned a lot from them. Fun, efficient, high-quality. 
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi maiores recusandae ea fuga. Dolores voluptatibus iure perferendis quasi quas rerum eveniet laborum veniam quam odio!<span>"</span>
+        <div id="testimonial-container">
+            <div class="testimonial-lg">
+                <img src="https://www.w3schools.com/w3css/img_avatar3.png" alt="testavatar">
+                <p><span>"</span>It was really nice to work with the GS Team, I've learned a lot from them. Fun, efficient, high-quality. 
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi maiores recusandae ea fuga. Dolores voluptatibus iure perferendis quasi quas rerum eveniet laborum veniam quam odio!<span>"</span>
+                
+                    <br>
+    
+                    <span class="testimonial-stars">
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                    </span>
+                </p>
+            </div>
+    
+            <div class="testimonial-sm">
+                <img src="assets/img/user.png" alt="useravatar">
+                <div class="testimonial-right">
+                    <p><span>"</span>It was really nice to work with the GS Team, I've learned a lot from them.<span>"</span><br><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i></p>
+                    <small>&mdash; Jessica</small>
+                </div>
+            </div>
+    
+            <div class="testimonial-sm">
+                <img src="assets/img/user.png" alt="useravatar">
+                <div class="testimonial-right">
+                    <p><span>"</span>Meh?<span>"</span><br><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></p>
+                    <small>&mdash; Vinzenz</small>
+                </div>
+            </div>
             
-                <br>
+            
 
-                <span class="testimonial-stars">
-                        <i class="fas fa-star fa-2x"></i>
-                        <i class="fas fa-star fa-2x"></i>
-                        <i class="fas fa-star fa-2x"></i>
-                        <i class="fas fa-star fa-2x"></i>
-                        <i class="fas fa-star fa-2x"></i>
-                </span>
-            </p>
-        </div>
+      </div>
 
-        <div class="testimonial-sm">
-            <img src="assets/img/user.png" alt="useravatar">
-            <div class="testimonial-right">
-                <p><span>"</span>It was really nice to work with the GS Team, I've learned a lot from them.<span>"</span><br><i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i></p>
-                <small>&mdash; Jessica</small>
-            </div>
-        </div>
-
-        <div class="testimonial-sm">
-            <img src="assets/img/user.png" alt="useravatar">
-            <div class="testimonial-right">
-                <p><span>"</span>Meh?<span>"</span><br><i class="fas fa-star"></i>
-                <i class="fas fa-star"></i></p>
-                <small>&mdash; Vinzenz</small>
-            </div>
-        </div>
+    <div id="testimonial-comment">
+        <input id="commentText" type="text" placeholder="Your comment">
+        <input id="commentRating" type="number" min="1" max="5" placeholder="rating">
+        <button (click)="addComment()" id="addComment">Comment</button>          
     </div>
 
-    <h3>Get Started</h3>
-    <div id="code-snippets">
+      <h3>Get Started</h3>
 
+      <div id="code-snippets">
         <h4><span>1.</span> Import & Init</h4>
         <div class="code-snippet">
-            <small>GS6</small>
-            <p>import <span>'&#x2141;'</span> from <span>'GS6'</span></p>
-            <p>&#x2141;.<span>initialize</span>((a, b) <span>=></span> &#x2141;(a) - &#x2141;(b))</p>
+          <small>GS6</small>
+          <p>import <span>'&#x2141;'</span> from <span>'GS6'</span></p>
+          <p>&#x2141;.<span>initialize</span>((a, b) <span>=></span> &#x2141;(a) - &#x2141;(b))</p>
         </div>
-
-        <h4><span>2.</span> Start coding!</h4>
+        <h4><span>2.</span> Start coding! Example here:</h4>
         <div class="code-snippet">
-            <small>GS6</small>
-            <p>import <span>'&#x2141;'</span> from <span>'GS6'</span></p>
-            <p>&#x2141;.<span>initialize</span>((a, b) <span>=></span> &#x2141;(a) - &#x2141;(b))</p>
+             <small>GS6</small>
+          <p>
+            &lt;&#x2141;S&gt;</p>
+            <p>Loaded templates: _templates</p>
+          
+          <p>help:</p>
+          <p>gs6 generator new [NAME] --action [ACTION]</p>
+          <p>gs6 generator with-prompt [NAME] --action [ACTION] </p>
+          <p>&lt;&#x2141;S&gt;
+          </p>
+          <img id="snip" src="https://raw.githubusercontent.com/kleber-swf/vscode-unity-code-snippets/master/images/usage-02.gif">
         </div>
-    </div>
-
-    <h3>Tutorials</h3>
-    <div id="tutorials">
+      </div>
+      <h3>Tutorials</h3>
+      <div id="tutorials">
         <div class="video">
-
         </div>
-    </div>
-</section>
+      </div>
+    </section>
+    
