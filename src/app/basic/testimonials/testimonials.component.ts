@@ -31,12 +31,23 @@ export class TestimonialsComponent implements OnInit {
             </div>
       `
       let testis = document.querySelectorAll('.testimonial-sm')
-      for(let i = 0; i < parseInt(rating); i++) {
-        testis[testis.length-1].children[1].firstElementChild.innerHTML += `<i class="fas fa-star"></i>`
+      if(rating > 5 || rating < 1) {
+        for(let i = 0; i < 5; i++) {
+          testis[testis.length-1].children[1].firstElementChild.innerHTML += `<i class="fas fa-star"></i>`
+        }
+      } else {
+        for(let i = 0; i < parseInt(rating); i++) {
+          testis[testis.length-1].children[1].firstElementChild.innerHTML += `<i class="fas fa-star"></i>`
+        }
       }
-      text = ""
-      rating = ""
+      this.clearInputs()
     }
+  }
+
+  clearInputs() {
+    document.getElementById('commentText').value = ""
+    document.getElementById('commentRating').value = ""
+
   }
 
   loginNow() {
