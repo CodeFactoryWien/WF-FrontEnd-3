@@ -109,7 +109,7 @@ next()
       document.getElementById('popUpWindow').style.display="block",
       clearInterval(popup),
       document.getElementById('popUpWindow').scrollIntoView({block: 'center'})
-    }, 10000)
+    }, 100000)
   }
 
   closePopUp() {

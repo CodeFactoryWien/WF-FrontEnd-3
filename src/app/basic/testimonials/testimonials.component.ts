@@ -18,8 +18,8 @@ export class TestimonialsComponent implements OnInit {
     if(!this.isLoggedIn) {
       this.showLogin()
     } else {
-      let text:any = document.getElementById('commentText').value
-      let rating:any = document.getElementById('commentRating').value
+      let text:any = (<HTMLInputElement>document.getElementById('commentText')).value
+      let rating:any = (<HTMLInputElement>document.getElementById('commentRating')).value
       document.getElementById('testimonial-container').innerHTML += 
       `
       <div class="testimonial-sm">
@@ -45,20 +45,21 @@ export class TestimonialsComponent implements OnInit {
   }
 
   clearInputs() {
-    document.getElementById('commentText').value = ""
-    document.getElementById('commentRating').value = ""
+    (<HTMLInputElement>document.getElementById('commentText')).value = "";
+    (<HTMLInputElement>document.getElementById('commentRating')).value = "";
 
   }
 
   showLogin() {
-    document.getElementById('comment-login').style.display = "block"
+    document.getElementById('comment-login').style.display = "grid"
     document.getElementById('comment-login').scrollIntoView({behavior: "smooth"})
   }
 
   loginNow() {
-    this.userName = document.getElementById('userName').value
+    this.userName = (<HTMLInputElement>document.getElementById('userName')).value
     this.isLoggedIn = true
     document.getElementById('testimonial-comment').scrollIntoView({behavior:"smooth", block:"center"})
+    document.getElementById('comment-login').style.display = "none"
   }
 
 
