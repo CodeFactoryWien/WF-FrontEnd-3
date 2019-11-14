@@ -103,6 +103,7 @@ next()
   }
 
   actionCode:string = (Math.random() * 2531).toFixed(3).split('.').join('')
+  actionProcent:Number = Math.floor(Math.random() * 15 + 10)
   popUpWindow() {
     let popup = setInterval(() => {
       document.getElementById('popUpWindow').style.display="block",

@@ -83,12 +83,14 @@ section#landing {
         position: absolute;
         margin-left: 1em;
         margin-right: 1em;
-        left: 0;
-        right: 0;
+        left: 50%;
+        top: 10%;
+        transform: translateX(-50%);
         background: $color-secondary;
         padding-top: 0;
         box-shadow: $shadow-lg;
         border: 1px solid black;
+        max-width: 500px;
 
         img {
             width: 100%;
