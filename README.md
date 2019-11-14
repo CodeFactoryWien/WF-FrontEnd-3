@@ -49,9 +49,9 @@ Author : [Barbara](https://github.com/barbaraani)
 `How?` :saved data in the TS and applied it in the HTML via {{}} with *ngFor  
 
 ## Testimonials Component
-Path : `pages/testimonials`  
+Path : `basic/testimonials`  
 Author : [Laszlo](https://github.com/voidlaszlo)  
 
-`What?` : Comments
+`What?` : Comments  
 `How?` : There is an isLoggedIn boolean in the component.ts file, and when it's true, you can leave a comment there.  
 To set this true, you have to log in.
