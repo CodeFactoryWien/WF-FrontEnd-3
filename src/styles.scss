@@ -51,15 +51,20 @@ $color-accent : #ddd;
 $shadow-sm : 0 2px 6px rgba(0, 0, 0, 0.15);
 $shadow-lg : 0 4px 10px rgba(0, 0, 0, 0.3);
 
-::-webkit-scrollbar-thumb
-{
-    border-radius: 10px;
-    background-color: #FFF;
-    background-image: -webkit-linear-gradient(top,
-                                              #e4f5fc 0%,
-                                              #bfe8f9 50%,
-                                              #9fd8ef 51%,
-                                              #2ab0ed 100%);
+// SCROLLBAR
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #01DF01;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2EFE2E;
 }
 
 
