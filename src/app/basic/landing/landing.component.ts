@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    this.popUpWindow()
+   }
 
     ngOnInit() {
   	  class TextScramble {
@@ -98,6 +100,19 @@ next()
 
   scrollDown() {
     document.querySelector('header').scrollIntoView({ block: 'start', behavior: 'smooth'})
+  }
+
+  actionCode:string = (Math.random() * 2531).toFixed(3).split('.').join('')
+  popUpWindow() {
+    let popup = setInterval(() => {
+      document.getElementById('popUpWindow').style.display="block",
+      clearInterval(popup),
+      document.getElementById('popUpWindow').scrollIntoView({block: 'center'})
+    }, 10000)
+  }
+
+  closePopUp() {
+    document.getElementById('popUpWindow').style.display = "none"
   }
 
 }

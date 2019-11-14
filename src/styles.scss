@@ -79,6 +79,53 @@ section#landing {
     animation: showUp 1s;
     text-align: center;
 
+    #popUpWindow {
+        position: absolute;
+        margin-left: 1em;
+        margin-right: 1em;
+        left: 0;
+        right: 0;
+        background: $color-secondary;
+        padding-top: 0;
+        box-shadow: $shadow-lg;
+        border: 1px solid black;
+
+        img {
+            width: 100%;
+        }
+
+        button {
+            position: absolute;
+            top: 1em;
+            left: 1em;
+            width: unset;
+            text-align: center;
+            background-color: $color-secondary;
+            color: black;
+        }
+
+        div.popUp-body {
+            padding: 1em;
+
+            p {
+                color: $color-title;
+            }
+    
+            span {
+                color: $color-main;
+            }
+
+            h3 {
+                margin-top: 1em;
+                border: 1px solid $color-main;
+                padding: 0.25em 0.5em;
+                border-radius: 5px;
+                background-color: white;
+                box-shadow: $shadow-sm;
+            }
+        }
+    }
+
     div.text-container {
         position: relative;
 
